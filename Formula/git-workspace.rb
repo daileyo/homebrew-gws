@@ -11,7 +11,7 @@ class GitWorkspace < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/daileyo/gws/releases/download/v2.18.0/git-workspace_2.18.0_darwin_amd64.tar.gz"
-      sha256 "3c65ad66e4914336f49948f930b7264ac936d6fdaa8af5aaaa1b89ad5a837fc6"
+      sha256 "ed487f9486b46fd09648be49f2c97d14292b7a8fced109c5fb90f6ed81fe1d7e"
 
       define_method(:install) do
         bin.install "git-workspace"
@@ -19,7 +19,7 @@ class GitWorkspace < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/daileyo/gws/releases/download/v2.18.0/git-workspace_2.18.0_darwin_arm64.tar.gz"
-      sha256 "885897ea0e846724ef23a6dea2cfc2c78f31bcc20f0c13c86796fe63c4d02e84"
+      sha256 "6f850032975642301f919d424bdb089944ce2d602d8cc58fb3daa5133c6c98ac"
 
       define_method(:install) do
         bin.install "git-workspace"
@@ -30,14 +30,14 @@ class GitWorkspace < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/daileyo/gws/releases/download/v2.18.0/git-workspace_2.18.0_linux_amd64.tar.gz"
-      sha256 "506c13259b3999167212cc2b68f9b877df0f676da8d6afbdbeb9b13f8c1d5cea"
+      sha256 "8afec06ad4541018f821992d25af74cff51778cd22b772e15435ee5ed718428a"
       define_method(:install) do
         bin.install "git-workspace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/daileyo/gws/releases/download/v2.18.0/git-workspace_2.18.0_linux_arm64.tar.gz"
-      sha256 "da5a01a7dae35146ffc8d3b25f9862a661326efcf66de710f2088d9e8641bb9d"
+      sha256 "ac11e488fae7fa4e090c36b50df07ba2e5c9900a84eb22210eeabe97216900ac"
       define_method(:install) do
         bin.install "git-workspace"
       end
