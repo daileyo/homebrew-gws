@@ -5,21 +5,21 @@
 class GitWorkspace < Formula
   desc "A lightweight CLI tool for discovering, organizing, and navigating git repositories"
   homepage "https://github.com/daileyo/gws"
-  version "2.19.0"
+  version "2.19.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daileyo/gws/releases/download/v2.19.0/git-workspace_2.19.0_darwin_amd64.tar.gz"
-      sha256 "c225f263a9f001a10d8594b42cd8a23d2e3449776aa443125490b458805918f4"
+      url "https://github.com/daileyo/gws/releases/download/v2.19.1/git-workspace_2.19.1_darwin_amd64.tar.gz"
+      sha256 "dc55b629f4056d91dd62d3b4586a1d895b07915f6ac0a1f6bf06b77fda6fe484"
 
       define_method(:install) do
         bin.install "git-workspace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daileyo/gws/releases/download/v2.19.0/git-workspace_2.19.0_darwin_arm64.tar.gz"
-      sha256 "5699abe19b154a6b0b8457bbbf2775f490bf0c760654071ecda7b6c190d61419"
+      url "https://github.com/daileyo/gws/releases/download/v2.19.1/git-workspace_2.19.1_darwin_arm64.tar.gz"
+      sha256 "bd219c279eedd0d11e2904f0745a0b169d5885d46a731bf40a91ad65ffa6490b"
 
       define_method(:install) do
         bin.install "git-workspace"
@@ -29,15 +29,15 @@ class GitWorkspace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daileyo/gws/releases/download/v2.19.0/git-workspace_2.19.0_linux_amd64.tar.gz"
-      sha256 "3f3f24cef86750c8fc2fbace9f83429e6f4729c5231dc6c6ec92064a9ee0d890"
+      url "https://github.com/daileyo/gws/releases/download/v2.19.1/git-workspace_2.19.1_linux_amd64.tar.gz"
+      sha256 "6be42ceb0d5dd8ac3c2e8e63e4644769fa244e9a243d7b5969a51c4a254a5752"
       define_method(:install) do
         bin.install "git-workspace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daileyo/gws/releases/download/v2.19.0/git-workspace_2.19.0_linux_arm64.tar.gz"
-      sha256 "188771f68aa3c8630943c5b33caa12c757296b8e8075049e61edb1f21127ebf1"
+      url "https://github.com/daileyo/gws/releases/download/v2.19.1/git-workspace_2.19.1_linux_arm64.tar.gz"
+      sha256 "8caa3e45feaf5a5daf94f36495cf08aa87b97041b79de14e3e40e0c73184aa3b"
       define_method(:install) do
         bin.install "git-workspace"
       end
